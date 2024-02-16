@@ -481,7 +481,7 @@
               "enableHotpatching": "[parameters('enableHotpatching')]",
               "patchMode": "[parameters('patchMode')]"
             }
-		  }
+          }
         },
         "securityProfile": "[if(or(equals(parameters('securityType'), 'TrustedLaunch'), equals(parameters('securityType'), 'ConfidentialVM')), variables('securityProfile'), json('null'))]",
         "storageProfile": {
